@@ -13,8 +13,15 @@ def remove_punctuation(text):
     return text_without_punctuation
 
 def read_file(file_path):
-    with open(file_path,'r',encoding='utf-8') as file:
-        return file.read()
+    try:
+        with open(file_path,'r',encoding='utf-8') as file:
+            return file.read()
+    except FileNotFoundError as e:
+        print(f"File not found: {str(e)}")
+        sys.exit(1)
+    except Exception as e:
+        print(f"An error occurred: {str(e)}")
+        sys.exit(1)
 
 def tokenize_chinese_text(text):
     seg_list = jieba.cut(text)
@@ -31,6 +38,9 @@ def calculate_similarity(original_text, text_to_check):
     return round(similarity,2)
 
 def main():
+    if len(sys.argv) != 4:
+        print("Usage: python main.py <original_file.txt> <file_to_check.txt> <output_file.txt>")
+        sys.exit(1)
     jieba.initialize()
     original_file = sys.argv[1]
     file_to_check=sys.argv[2]
