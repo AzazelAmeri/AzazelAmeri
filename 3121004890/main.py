@@ -20,6 +20,8 @@ if __name__=='__main__':
     original_text=read_file(original_file)
     text_to_check=read_file(file_to_check)
     similarity = calculate_similarity(original_text, text_to_check)
+    similarity = round(similarity, 2)
 
     with open(output_file, 'w') as output_file:
         output_file.write(str(similarity))
+    print(similarity)
