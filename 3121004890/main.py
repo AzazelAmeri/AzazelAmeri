@@ -1,15 +1,20 @@
 #-*-coding: gbk-*-
 import sys
 import jieba
+import zhon.hanzi
 import string
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 def remove_punctuation(text):
-    #将标点符号去除
-    translator = str.maketrans('', '', string.printable)
+    #将英文标点符号去除
+    translator_en = str.maketrans('', '', string.printable)
     # 使用映射表去除标点符号
-    text_without_punctuation = text.translate(translator)
+    text_without_en_punctuation = text.translate(translator_en)
+    #将中文标点符号去除
+    translator_zhon = str.maketrans('', '', zhon.hanzi.punctuation)
+    text_without_punctuation = text_without_en_punctuation.translate(translator_zhon)
+
     return text_without_punctuation
 
 def read_file(file_path):

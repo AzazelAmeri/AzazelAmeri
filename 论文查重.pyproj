@@ -26,6 +26,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="3121004890\main.py" />
+    <Compile Include="3121004890\test.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="3121004890\" />
