@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d4dcd228-5fc4-4bbc-9204-f52353b9feff</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>论文查重.py</StartupFile>
+    <StartupFile>3121004890\main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="论文查重.py" />
+    <Compile Include="3121004890\main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="3121004890\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
