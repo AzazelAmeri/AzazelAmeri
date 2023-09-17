@@ -12,7 +12,7 @@
     <Name>论文查重</Name>
     <RootNamespace>论文查重</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>C:\Users\86138\source\repos\论文查重\3121004890\orig.txt C:\Users\86138\source\repos\论文查重\3121004890\orig_0.8_add.txt C:\Users\86138\source\repos\论文查重\3121004890\result.txt  </CommandLineArguments>
+    <CommandLineArguments>C:\Users\86138\source\repos\论文查重\3121004890\orig.txt C:\Users\86138\source\repos\论文查重\3121004890\orig_0.8_del.txt C:\Users\86138\source\repos\论文查重\3121004890\result.txt  </CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
     <InterpreterId>CondaEnv|CondaEnv|sklearn</InterpreterId>
   </PropertyGroup>
